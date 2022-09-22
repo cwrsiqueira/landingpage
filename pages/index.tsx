@@ -1,3 +1,4 @@
+import { NextPage } from "next"
 import Head from 'next/head';
 import BodyTitle from '../components/BodyTitle';
 import BodyItem from '../components/BodyItem';
@@ -14,7 +15,7 @@ import FacebookIcon from '../images/facebook.jpg';
 import LinkedinIcon from '../images/linkedin.jpg';
 import YoutubeIcon from '../images/youtube.jpg';
 
-const Home = () => {
+const Home: NextPage = () => {
   return (
     <div>
       <Head>
@@ -124,7 +125,7 @@ const Home = () => {
         />
       </footer>
     </div>
-  );
+  )
 }
 
-export default Home;
+export default Home
