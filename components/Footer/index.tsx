@@ -18,7 +18,7 @@ const Footer = ({ logo, title, menu, sociais }: Props) => {
                 <div>{logo}</div>
                 <div className="font-mediu text-xl color-black self-end">{title}</div>
             </div>
-            <div className="mb-8 flex ">
+            <div className="mb-8 hidden md:flex">
                 {menu.map((item, index) => (
                     <li key={index} className='mx-6 cursor-pointer ease-in-out duration-300 hover:text-slate-400 list-none'>
                         <Link href={item.url}>
@@ -27,7 +27,7 @@ const Footer = ({ logo, title, menu, sociais }: Props) => {
                     </li>
                 ))}
             </div>
-            <div className="mb-8 flex">
+            <div className="mb-8 flex flex-wrap items-center justify-center">
                 {sociais.map((item, index) => (
                     <li key={index} className='mx-6 cursor-pointer ease-in-out duration-300 hover:text-slate-400 list-none'>
                         <Link href={item.url}>
@@ -38,7 +38,7 @@ const Footer = ({ logo, title, menu, sociais }: Props) => {
                     </li>
                 ))}
             </div>
-            <div className="flex mb-8 text-sm text-[#718096]">
+            <div className="flex flex-col items-center mb-8 text-sm text-[#718096] md:flex-row">
                 © Copyright 2021 {title} - Powered with ♥ by {' '}
                 <div className="text-[#03A9F4]">
                     <Link href={'#'}>

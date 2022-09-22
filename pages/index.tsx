@@ -39,30 +39,6 @@ const Home: NextPage = () => {
               menu: 'Sign in',
               url: 'login'
             },
-            {
-              menu: 'Github',
-              url: 'https://github.com'
-            },
-            {
-              menu: 'Sign in',
-              url: 'login'
-            },
-            {
-              menu: 'Github',
-              url: 'https://github.com'
-            },
-            {
-              menu: 'Sign in',
-              url: 'login'
-            },
-            {
-              menu: 'Github',
-              url: 'https://github.com'
-            },
-            {
-              menu: 'Sign in',
-              url: 'login'
-            },
           ]}
         />
       </nav>

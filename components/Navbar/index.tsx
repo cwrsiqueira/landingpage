@@ -19,11 +19,11 @@ const Navbar = ({ logo, title, menu }: Props) => {
             </div>
             <div>
                 <div onClick={() => setShowMobileMenu(!showMobileMenu)} className='`fixed left-0 top-0 flex flex-col p-4 items-center cursor-pointer z-20 lg:hidden'>
-                    <div className={`w-4 h-0.5 bg-black m-px ease-in-out duration-300 absolute mt-[5px] ${showMobileMenu ? 'rotate-45' : ''}`}></div>
-                    <div className={`w-4 h-0.5 bg-black m-px ease-in-out duration-300 absolute mt-[${showMobileMenu ? '5px' : '9px'}] ${showMobileMenu ? '-rotate-45' : ''}`}></div>
-                    <div className={`w-4 h-0.5 bg-black m-px ease-in-out duration-200 mt-[${showMobileMenu ? '5px' : ''}] ${showMobileMenu ? 'bg-transparent' : ''}`}></div>
+                    <div className={`w-4 h-0.5 bg-black m-px ease-in-out duration-300 ${showMobileMenu ? 'absolute rotate-45' : ''}`}></div>
+                    <div className={`w-4 h-0.5 bg-black m-px ease-in-out duration-300 ${showMobileMenu ? 'absoulute -rotate-45' : ''}`}></div>
+                    <div className={`w-4 h-0.5 bg-black m-px ease-in-out duration-200 ${showMobileMenu ? 'absolute bg-transparent' : ''}`}></div>
                 </div>
-                <div className={`fixed left-0 mt-6 bg-white z-10 w-full shadow-lg shadow-indigo-500/40 p-4 ${showMobileMenu ? '' : 'hidden'} lg:hidden`}>
+                <div className={`fixed left-0 mt-6 bg-white z-10 w-full shadow-lg shadow-gray-500/40 p-4 ${showMobileMenu ? '' : 'hidden'} lg:hidden`}>
                     <ul className="list-none">
                         {menu.map((item, index) => (
                             <li key={index} className='mx-6 cursor-pointer ease-in-out duration-300 p-2 hover:text-slate-600 hover:bg-slate-100'>
