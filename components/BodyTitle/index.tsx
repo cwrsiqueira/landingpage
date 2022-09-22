@@ -5,9 +5,9 @@ type Props = {
 
 const Body = ({ title, description }: Props) => {
     return (
-        <div className="mt-32 mb-24 max-w-5xl m-auto text-center">
-            <div className="font-bold text-4xl text-[#1A202C]">{title}</div>
-            <div className="font-normal text-x1 text-[#718096] max-w-[70%] m-auto">{description}</div>
+        <div className="mb-24 max-w-5xl m-auto text-center mt-32">
+            <div className="font-bold text-2xl text-[#1A202C] md:text-4xl">{title}</div>
+            <div className="font-normal text-sm text-[#718096] max-w-[70%] m-auto md:text-4xl">{description}</div>
         </div>
     );
 }

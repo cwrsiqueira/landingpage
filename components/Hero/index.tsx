@@ -12,12 +12,12 @@ type Props = {
 
 const Hero = ({ mainTitle, subTitle, subTitleColor, description, btnText, btnColor, btnLink }: Props) => {
     return (
-        <div className="flex bg-[#F7FAFC] h-[490px] justify-center items-center">
+        <div className="flex bg-[#F7FAFC] justify-center mt-[140px] md:items-center md:h-[490px]">
             <div className="text-center">
-                <div className="font-bold text-5xl text-[#1A202C] mb-6">{mainTitle}</div>
-                <div className={`font-bold text-5xl text-[${subTitleColor}] mb-6`}>{subTitle}</div>
-                <div className="font-normal text-2x1 text-[#718094] mb-6">{description}</div>
-                <div className={`font-bold text-x1 text-white bg-[#03A9F4] px-[60px] py-[25px] rounded-md ease-in-out duration-300 cursor-pointer w-[364px] m-auto hover:scale-105`}>
+                <div className="font-bold text-2xl text-[#1A202C] mb-6 md:text-5xl">{mainTitle}</div>
+                <div className={`font-bold text-2xl text-[${subTitleColor}] mb-6 md:text-5xl`}>{subTitle}</div>
+                <div className="font-normal text-xs text-[#718094] mb-6 md:text-2x1">{description}</div>
+                <div className={`font-bold text-xs text-white bg-[#03A9F4] px-[60px] py-[25px] rounded-md ease-in-out duration-300 cursor-pointer w-[278    px] m-auto hover:scale-105 md:text-x1 md:w-[364px]`}>
                     <Link href={btnLink}>
                         <a>{btnText}</a>
                     </Link>

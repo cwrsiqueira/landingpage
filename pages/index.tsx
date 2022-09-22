@@ -5,8 +5,11 @@ import BodyItem from '../components/BodyItem';
 import Hero from '../components/Hero';
 import Navbar from '../components/Navbar';
 import BodyImage1 from '../images/bodyImgItem1.svg';
+import BodyImage1Sm from '../images/bodyImgItem1-sm.svg';
 import BodyImage2 from '../images/bodyImgItem2.svg';
+import BodyImage2Sm from '../images/bodyImgItem2-sm.svg';
 import BodyImage3 from '../images/bodyImgItem3.svg';
+import BodyImage3Sm from '../images/bodyImgItem3-sm.svg';
 import ImgLogo from '../images/imgLogo.svg';
 import ImgLogoSm from '../images/imgLogoSm.svg';
 import CallAction from '../components/CallAction';
@@ -28,6 +31,30 @@ const Home: NextPage = () => {
           logo={<ImgLogo />}
           title={'Starter'}
           menu={[
+            {
+              menu: 'Github',
+              url: 'https://github.com'
+            },
+            {
+              menu: 'Sign in',
+              url: 'login'
+            },
+            {
+              menu: 'Github',
+              url: 'https://github.com'
+            },
+            {
+              menu: 'Sign in',
+              url: 'login'
+            },
+            {
+              menu: 'Github',
+              url: 'https://github.com'
+            },
+            {
+              menu: 'Sign in',
+              url: 'login'
+            },
             {
               menu: 'Github',
               url: 'https://github.com'
@@ -59,14 +86,16 @@ const Home: NextPage = () => {
           <BodyItem
             title={'Título Teste 1'}
             text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim.'}
-            svg={<BodyImage1 />}
+            img={<BodyImage1 />}
+            imgSm={<BodyImage1Sm />}
           />
         </article>
         <article>
           <BodyItem
             title={'Título Teste 2'}
             text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim.'}
-            svg={<BodyImage2 />}
+            img={<BodyImage2 />}
+            imgSm={<BodyImage2Sm />}
             reverse
           />
         </article>
@@ -74,7 +103,8 @@ const Home: NextPage = () => {
           <BodyItem
             title={'Título Teste 3'}
             text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim.'}
-            svg={<BodyImage3 />}
+            img={<BodyImage3 />}
+            imgSm={<BodyImage3Sm />}
           />
         </article>
         <article>
