@@ -25,7 +25,7 @@ const Navbar = ({ logo, title, menu }: Props) => {
                     <div className={`w-4 h-0.5 bg-black m-px ease-in-out duration-200 ${showMobileMenu ? 'absolute bg-transparent' : ''}`}></div>
                 </div>
                 {/* Mobile menu */}
-                <div className={`fixed left-0 mt-6 bg-white z-10 w-full shadow-lg shadow-gray-500/40 p-4 ${showMobileMenu ? '' : 'hidden'} lg:hidden`}>
+                <div className={`fixed left-0 mt-6 bg-[#F7FAFC] z-10 w-full shadow-lg shadow-gray-500/40 p-4 transition-all ${showMobileMenu ? '' : '-translate-y-full -z-10 opacity-0'} lg:hidden`}>
                     <ul className="list-none">
                         {menu.map((item, index) => (
                             <li key={index} className='mx-6 cursor-pointer ease-in-out duration-300 p-2 hover:text-slate-600 hover:bg-slate-100'>
