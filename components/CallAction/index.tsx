@@ -16,7 +16,7 @@ const CallAction = ({ sentence, call, btnText, btnColor }: Props) => {
                     <div className="font-medium text-xl mb-4 text-[#03A9F4] md:text-2xl">{call}</div>
                 </div>
                 <div className="flex justify-center items-center flex-1">
-                    <div className={`w-[164px] bg-[#03A9F4] px-7 py-3 rounded-xl text-bold text-xl text-white ease-in-out duration-300 hover:scale-105`}>
+                    <div className={`w-[164px] ${btnColor} px-7 py-3 rounded-xl text-bold text-xl text-white ease-in-out duration-300 hover:scale-105`}>
                         <Link href={'#'}>
                             <a>{btnText}</a>
                         </Link>

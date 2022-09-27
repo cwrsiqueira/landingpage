@@ -46,10 +46,10 @@ const Home: NextPage = () => {
         <Hero
           mainTitle={'The Modern Landing page for'}
           subTitle={'React developers'}
-          subTitleColor={'#03A9F4'}
+          subTitleColor={'text-[#03A9F4]'}
           description={'The easiest way to build a React landing page in seconds.'}
           btnText={'Download Your Free Theme'}
-          btnColor={'#03A9F4'}
+          btnColor={'bg-[#03A9F4]'}
           btnLink={'#'}
         />
       </section>
@@ -88,7 +88,7 @@ const Home: NextPage = () => {
             sentence={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'}
             call={'Start your Free Trial.'}
             btnText={'Get Started'}
-            btnColor={'#03A9F4'}
+            btnColor={'bg-[#03A9F4]'}
           />
         </article>
       </main>
