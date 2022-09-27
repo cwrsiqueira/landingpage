@@ -9,7 +9,7 @@ type Props = {
 
 const CallAction = ({ sentence, call, btnText, btnColor }: Props) => {
     return (
-        <div className="max-w-4xl text-center bg-[#E6F6FE] m-6 p-6 rounded-xl md:m-auto md:m-4 lg:m-auto lg:mb-4">
+        <div className="max-w-4xl text-center bg-[#E6F6FE] m-6 p-6 rounded-xl md:m-4 lg:m-auto lg:mb-4">
             <div className="flex flex-col md:flex-row">
                 <div className="text-left">
                     <div className="font-medium text-xl mb-4 md:text-2xl">{sentence}</div>
