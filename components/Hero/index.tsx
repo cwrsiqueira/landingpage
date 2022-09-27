@@ -12,7 +12,7 @@ type Props = {
 
 const Hero = ({ mainTitle, subTitle, subTitleColor, description, btnText, btnColor, btnLink }: Props) => {
     return (
-        <div className="flex bg-[#F7FAFC] justify-center mt-[140px] p-4 md:items-center md:h-[490px]">
+        <div className="flex bg-[url(/bg.jpg)] bg-cover bg-right bg-[#F7FAFC] justify-center mt-[140px] p-4 md:items-center md:h-[490px]">
             <div className="text-center">
                 <div className="font-bold text-2xl text-[#1A202C] mb-6 md:text-5xl">{mainTitle}</div>
                 <div className={`font-bold text-2xl ${subTitleColor} mb-6 md:text-5xl`}>{subTitle}</div>
